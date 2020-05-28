@@ -33,6 +33,21 @@ const config = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.s(a|c)ss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[local]',
+              },
+            },
+          },
+          'sass-loader',
+        ],
+      },
     ],
   },
   plugins: [
