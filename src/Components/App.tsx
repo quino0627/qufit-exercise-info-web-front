@@ -1,9 +1,13 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import styles from './index.scss';
+import Routes from './Routes';
 
 const App: React.FC = () => {
-  return <h1 className={styles.title}>Hello Wepack!</h1>;
+  return (
+    <BrowserRouter>
+      <Routes isLoggedIn />
+    </BrowserRouter>
+  );
 };
 
 export default App;
