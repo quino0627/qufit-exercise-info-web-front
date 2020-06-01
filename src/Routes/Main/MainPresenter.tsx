@@ -1,9 +1,14 @@
 import * as React from 'react';
+import Categories from '../../Components/Categories';
 
 interface IMainPresenterProps {}
 
-const MainPresenter: React.FunctionComponent<IMainPresenterProps> = () => {
-  return <div>asdf</div>;
-};
+function MainPresenter(): React.ReactElement {
+  return (
+    <>
+      <Categories />
+    </>
+  );
+}
 
 export default MainPresenter;

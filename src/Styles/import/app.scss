@@ -1,0 +1,19 @@
+.header {
+    border-bottom: 1px solid $lightGray;
+}
+
+.content {
+    box-sizing: content-box;
+    max-width: $max-width;
+    width:100%;
+    padding: 0 48px;
+    padding-bottom: 160px;
+    margin: 0 auto;
+
+    background-color:$white;
+}
+
+.footer {
+    text-align: center;
+    background-color: white;
+}

@@ -3,8 +3,8 @@ import MainPresenter from './MainPresenter';
 
 interface IMainContainerProps {}
 
-const MainContainer: React.FunctionComponent<IMainContainerProps> = props => {
+function MainContainer(): React.ReactElement {
   return <MainPresenter />;
-};
+}
 
 export default MainContainer;
